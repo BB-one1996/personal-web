@@ -1,16 +1,30 @@
-# React + Vite
+# 沈力钊 · 个人作品集
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + Vite 个人网站，托管在 GitHub Pages 的 `/docs` 目录。
 
-Currently, two official plugins are available:
+线上地址：https://BB-one1996.github.io/personal-web/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+仓库：https://github.com/BB-one1996/personal-web
 
-## React Compiler
+## 本地开发
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+npm run build
+```
 
-## Expanding the Oxlint configuration
+`npm run build` 会把静态站点写到 `docs/`，并复制 `404.html`、写入 `.nojekyll`，方便 GitHub Pages 直接发布。
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## GitHub Pages
+
+这是**项目站点**（仓库名不是 `用户名.github.io`），地址形式为 `https://用户名.github.io/仓库名/`。因此 Vite 的 `base` 设为 `/personal-web/`。
+
+按 [GitHub 文档](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) 在仓库中开启：
+
+1. Settings → Pages
+2. Source 选 **Deploy from a branch**
+3. Branch 选 `master`，文件夹选 `/docs`
+4. Save
+
+站点公开后约需 1–10 分钟生效。`.nojekyll` 用来跳过 Jekyll，避免 Vite 资源被忽略。
