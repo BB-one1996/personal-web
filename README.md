@@ -2,9 +2,9 @@
 
 React + Vite 个人网站，托管在 GitHub Pages 的 `/docs` 目录。
 
-线上地址：https://BB-one1996.github.io/personal-web/
+线上地址：https://bb-one1996.github.io/
 
-仓库：https://github.com/BB-one1996/personal-web
+仓库：https://github.com/BB-one1996/BB-one1996.github.io
 
 ## 本地开发
 
@@ -18,7 +18,7 @@ npm run build
 
 ## GitHub Pages
 
-这是**项目站点**（仓库名不是 `用户名.github.io`），地址形式为 `https://用户名.github.io/仓库名/`。因此 Vite 的 `base` 设为 `/personal-web/`。
+这是**用户站点**：仓库名为 `BB-one1996.github.io`，地址为 `https://bb-one1996.github.io/`。Vite 的 `base` 为 `/`。
 
 按 [GitHub 文档](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) 在仓库中开启：
 

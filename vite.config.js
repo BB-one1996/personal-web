@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // Project Pages URL: https://BB-one1996.github.io/personal-web/
-  base: '/personal-web/',
+  // User site: https://bb-one1996.github.io/
+  base: '/',
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'docs',
